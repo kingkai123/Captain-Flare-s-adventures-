@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shield the Earth - Mini Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="ui">
+      <div class="hud-center">
+        <div id="wave">Wave 1</div>
+      </div>
+      <div class="hud-right">
+        <div id="score">Score: 0</div>
+      </div>
+      <div id="dialogue" aria-live="polite"></div>
+      <button id="pauseBtn" title="Pause / Resume (P)">Pause</button>
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <noscript>
+      This game requires JavaScript. Please enable it to play.
+    </noscript>
+
+    <script src="game.js" defer></script>
+  </body>
+  </html>
+
+
