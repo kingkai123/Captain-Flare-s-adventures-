@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Am a Solar Flare - My Journey to Earth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video id="backgroundVideo" autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Video Overlay -->
+    <div id="videoOverlay"></div>
+    
+    <main id="app">
+        <div id="scene-container">
+            <!-- Scenes will be dynamically loaded here -->
+        </div>
+    </main>
+    
+    <!-- Animated Solar Flare Character -->
+    <div class="solar-flare-character" id="solarFlareCharacter">
+        <img src="solar flare.png" alt="Solar Flare Character" class="solar-flare-image">
+    </div>
+    
+    <!-- Speech Bubble -->
+        <div class="speech-bubble" id="speechBubble">
+            <!-- Speech content will be dynamically loaded here -->
+        </div>
+        
+        <!-- Touch Navigation Areas -->
+        <div class="touch-nav-area touch-nav-left" id="touchNavLeft">
+            <div class="touch-indicator">
+                <span class="touch-arrow">←</span>
+                <span class="touch-text">Back</span>
+            </div>
+        </div>
+        <div class="touch-nav-area touch-nav-right" id="touchNavRight">
+            <div class="touch-indicator">
+                <span class="touch-arrow">→</span>
+                <span class="touch-text">Next</span>
+            </div>
+        </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
